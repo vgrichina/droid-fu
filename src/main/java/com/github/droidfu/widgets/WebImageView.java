@@ -237,7 +237,18 @@ public class WebImageView extends ViewSwitcher {
      * Returns the URL of the image to show
      * @return
      */
-	public String getImageUrl() {
-		return imageUrl;
-	}
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public ScaleType getScaleType() {
+        return scaleType;
+    }
+
+    public void setScaleType(ScaleType scaleType) {
+        this.scaleType = scaleType;
+        if (imageView != null) {
+            imageView.setScaleType(scaleType);
+        }
+    }
 }
