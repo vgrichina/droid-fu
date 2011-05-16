@@ -201,7 +201,6 @@ public class CachedList<CO extends CachedModel> extends CachedModel {
          * @see android.os.Parcelable.Creator#createFromParcel(android.os.Parcel)
          */
         @SuppressWarnings({ "rawtypes", "unchecked" })
-        @Override
         public CachedList<CachedModel> createFromParcel(Parcel source) {
             try {
                 return new CachedList(source);
@@ -215,7 +214,6 @@ public class CachedList<CO extends CachedModel> extends CachedModel {
          * @see android.os.Parcelable.Creator#newArray(int)
          */
         @SuppressWarnings("unchecked")
-        @Override
         public CachedList<CachedModel>[] newArray(int size) {
             return new CachedList[size];
         }

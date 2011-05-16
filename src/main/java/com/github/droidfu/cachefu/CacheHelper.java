@@ -34,7 +34,6 @@ public class CacheHelper {
         }
 
         File[] list = cacheDir.listFiles(new FilenameFilter() {
-            @Override
             public boolean accept(File dir, String filename) {
                 return dir.equals(cacheDir)
                         && filename.startsWith(cache.getFileNameForKey(urlPrefix));

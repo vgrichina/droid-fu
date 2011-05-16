@@ -233,7 +233,6 @@ public abstract class CachedModel implements Parcelable {
     /**
      * @see android.os.Parcelable#describeContents()
      */
-    @Override
     public int describeContents() {
         return 0;
     }
@@ -241,7 +240,6 @@ public abstract class CachedModel implements Parcelable {
     /**
      * @see android.os.Parcelable#writeToParcel(android.os.Parcel, int)
      */
-    @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(id);
         dest.writeLong(transactionId);
